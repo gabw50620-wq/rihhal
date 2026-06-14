@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html dir="rtl" lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>رحّال - دليلك للسفر</title>
+<meta charset="UTF-8">
+<title>موقعي ريحال</title>
+<style>
+body{margin:0;font-family:tahoma;background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover fixed;color:#fff;text-align:center}
+header{background:rgba(0,0,0,0.8);padding:15px;position:sticky;top:0;display:flex;justify-content:space-between;align-items:center}
+nav a{color:#fff;text-decoration:none;margin:0 10px;font-weight:bold}
+.box{background:rgba(0,0,0,0.6);max-width:650px;margin:40px auto;padding:25px;border-radius:20px}
+input,textarea,select,button{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:none;font-size:16px}
+button{background:#ff5722;color:#fff;cursor:pointer;font-weight:bold}
+.btn-lang{background:#2196f3;margin-top:10px}
+</style>
 </head>
 <body>
-  <h1>مرحبا بك في رحّال</h1>
-  <p>اكتب محتوى موقعك هنا</p>
+
+<header>
+  <h2>🌴 ريحال</h2>
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">المنتجات</a>
+    <a href="#">من نحن</a>
+    <a href="#">تواصل</a>
+  </nav>
+  <button class="btn-lang" onclick="alert('بعدين نضيف عربي/انجليزي')">English</button>
+</header>
+
+<div class="box">
+  <h3>نشر منتج جديد</h3>
+  <input id="pname" placeholder="اسم المنتج">
+  <textarea id="pdesc" placeholder="وصف المنتج..." rows="3"></textarea>
+  <input id="pprice" placeholder="السعر" type="number">
+  <input type="file" id="pimg">
+  <button onclick="alert('شكله حلو صح؟ بعدين نربطه بالتخزين ويحفظ')">نشر المنتج</button>
+</div>
+
+<div class="box">
+  <h3>الاعدادات</h3>
+  <input placeholder="تغيير لون الخلفية - قريباً">
+  <button onclick="alert('اعدادات قريباً')">حفظ الاعدادات</button>
+</div>
+
 </body>
 </html>
